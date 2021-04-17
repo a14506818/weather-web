@@ -1,0 +1,16 @@
+@mixin setFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin setGlass() {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  filter: drop-shadow(1px 1px 0.1em rgb(0, 0, 0));
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}

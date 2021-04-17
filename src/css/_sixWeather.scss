@@ -1,0 +1,47 @@
+.sixBigBox {
+  @include setFlex();
+  .title {
+    position: absolute;
+    top: 3px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .sixSmallBox {
+    @include setFlex();
+    justify-content: space-around;
+    position: relative;
+    top: 20px;
+    height: 90px;
+    width: 370px;
+
+    font-weight: 100;
+    font-size: 0.9em;
+
+    .sixWeather {
+      @include setFlex();
+      flex-direction: column;
+      .temperature {
+        position: absolute;
+        top: 0px;
+        letter-spacing: 0.05em;
+        &::after {
+          position: absolute;
+          top: -3px;
+          content: "°";
+          font-size: 0.9em;
+        }
+      }
+      .icon {
+        position: absolute;
+        top: 18px;
+      }
+      .time {
+        position: absolute;
+        top: 60px;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.mainWeather {
+  @include setGlass();
+  height: 500px;
+  width: 400px;
+  margin: 10px 5px;
+  z-index: 10;
+  // cursor: pointer;
+
+  .reloadBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+  }
+
+  .area {
+    position: relative;
+    top: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+  }
+  .weatherIcon img {
+    position: relative;
+    top: 40px;
+    font-size: 10em;
+  }
+  .temperature {
+    position: relative;
+    top: -10px;
+    font-size: 3em;
+    font-weight: 100;
+
+    &::after {
+      content: "°";
+      position: absolute;
+      font-size: 0.6em;
+    }
+  }
+  .weatherDescription {
+    position: relative;
+    top: -20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .timeStamp {
+    position: relative;
+    top: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transform: translateZ(40px);
+  }
+}
