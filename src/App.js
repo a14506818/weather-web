@@ -47,7 +47,7 @@ function App() {
   };
   useEffect(() => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${inputText}&appid=${apiData.key}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${inputText}&appid=${apiData.key}&units=metric`
     )
       .then((res) => res.json())
       .then((res) => {
@@ -59,7 +59,7 @@ function App() {
         }
       });
     fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${inputText}&appid=${apiData.key}&units=metric`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${inputText}&appid=${apiData.key}&units=metric`
     )
       .then((res) => res.json())
       .then((res) => {
