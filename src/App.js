@@ -106,13 +106,13 @@ function App() {
   const setDateTime = (dt) => {
     const DT = new Date(dt * 1000);
     const weekdays = [
+      "Sunday",
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
       "Saturday",
-      "Sunday",
     ];
     return {
       Y: "" + DT.getFullYear(),
